@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Web应用基础报告</h1> 
+<h2>网页整体介绍</h2>
+<p>该静态网页用bootstrap框架和jquery做的一个appleVision产品的介绍。</p>
+<h2>开发过程</h2>
+<p>此界面使用一个长页面来展示整个页面，首页右上角有目录下拉可以定位到各个板块。<br>
+    除此之外，所有按钮将被返回到主页。<br>
+    主页的字体使用了fade的淡化效果以及delay过渡动画。<br>
+    通过导入图片将此图片固定在中心作为一个自定义图标。<br>
+    用jQuery里面的插件实现轮播图将图片展现在容器中，并设置延时。<br>
+    在一个容器里面设置全屏背景图以及边距来达到窗口滑动的效果。<br></p>
+<h2>遇到的问题</h2>
+<p>如何让字体更加丝滑从屏幕中显现出来，<br>
+    如何使用轮播图将照片一张一张展现出来并且在下方配上文字，<br>
+    如何设置触控按钮的动态效果，比如在点击按钮时按钮的效果，<br>
+    如何将多个界面布局占满整个容器，如何设计调整布局样式，<br>
+    如何自定义图标</p>
+<h2>如何解决</h2>
+<p>使用jquery框架中的fade实现淡入效果，比如fadeindown fadeinup，fadeinright，fadeinleft等等，<br>
+    使用 jQuery 幻灯片插件 flexslider，比如在设置details时用到了这部分js：<br>
+    $('#teamSlider').flexslider({<br>
+        animation: "slide",<br>
+        directionNav: false,<br>
+        controlNav: true,<br>
+        touch: true,<br>
+        pauseOnHover: true,<br>
+        start: function() {<br>
+        $.waypoints('refresh');<br>
+        }<br>
+    });</p>
+<h2>哪些未解决</h2>
+<p>如何设置触控按钮的动态效果</p>
+<h2>总结</h2>
+<p>通过此次web界面的开发，了解了网页开发的bootstrap的框架和jquery的框架，<br>
+    学习到了很多插件比如flexslider、waypoint。
+    整体来看，要学习的东西很多，通过一次项目开发把所有的知识整合起来，然后查缺补漏那些不懂的知识点，忘记的知识需要自己去查找资料，自己的想法要去理解并且去了解如何实现出来。<br>
+    前端需要学习的东西比较多且需要及时复习记忆，才可以在项目开发中使用得更加便捷高效。<br>
+    在很多界面比较复杂的地方需要调节的样式比较多，不够明确各种样式的优先顺序，导致有些样式调节之后没有用，还需要多积累网页开发的经验，多多学习。</p>
+</body>
+</html>
